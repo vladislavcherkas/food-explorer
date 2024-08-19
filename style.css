@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    background-color: #000a0f;
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+}
+
+/* Header */
+.header {
+    background-color: #00111a;
+}
+
+/* Footer */
+.footer {
+    background-color: #00111a;
+}
+.footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+
+/* Capsule */
+.capsule {
+    flex-grow: 1;
+}
+
+@media (min-width: 769px) {
+
+    /* Footer */
+    .footer__wrap {
+        max-width: 1120px;
+        padding: 0 65px;
+    }
+}
