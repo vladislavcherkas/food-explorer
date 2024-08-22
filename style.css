@@ -1,14 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Roboto:wght@400;700&display=swap');
 body {
     margin: 0;
     background-color: #000a0f;
+    font: 500 12px Poppins, sans-serif;
+}
+
+/* Page */
+.page {
     display: flex;
     flex-direction: column;
     min-height: 100svh;
+}
+.page__capsule {
+    flex-grow: 1;
 }
 
 /* Header */
 .header {
     background-color: #00111a;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.logo__logomark {
+    display: flex;
+}
+.logo__img {
+    width: 1em;
+    height: 1em;
+}
+.logo__wordmark {
+    margin-left: 0.3em;
+    font: bold 1em Roboto, sans-serif;
+    line-height: 1;
 }
 
 /* Footer */
@@ -18,13 +46,17 @@ body {
 .footer__wrap {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 77px;
     padding: 0 25px;
     margin: 0 auto;
 }
-
-/* Capsule */
-.capsule {
-    flex-grow: 1;
+.footer__logo-wrap {
+    font-size: 44px;
+}
+.footer__сopyright {
+    font: 500 12px Roboto, sans-serif;
+    color: #fffaf1;
 }
 
 @media (min-width: 769px) {
